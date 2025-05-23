@@ -88,6 +88,13 @@
     color: #ffffff;
 }
 
+/* Workout Playlist */
+.bordered-workout {
+    border: 2px solid #b5a8a8;
+    background: #b5a8a8;
+    color: #ffffff;
+}
+
 /* Add styles for the parent container to align items horizontally */
 .tab {
     display: flex; /* Use flexbox for layout */
@@ -104,4 +111,65 @@ body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     font-family: Arial, Helvetica, sans-serif; /* Optional: Set a default font */
+    padding-top: 64px; /* Adjust based on the height of the header */
+}
+
+/* Styles for the grey rounded box */
+.playlist-container {
+    background: #212121; /* Light grey background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 16px; /* Add padding inside the box */
+    margin: 8px; /* Add spacing between boxes */
+    display: inline-block; /* Ensure the container behaves like a block */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.playlist-container:hover {
+    opacity: 0.9; /* Optional: Add a hover effect */
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed; /* Makes the header stay at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background: #191414; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 16px 0; /* Add padding for spacing */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+}
+
+.fixed-header nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+.playlist-links {
+    list-style: none; /* Remove default list styling */
+    display: flex;
+    gap: 24px; /* Add spacing between links */
+    padding: 0;
+    margin: 0;
+}
+
+.playlist-links li {
+    display: inline;
+}
+
+.playlist-links a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.playlist-links a:hover {
+    color: #1DB954; /* Spotify green on hover */
 }
