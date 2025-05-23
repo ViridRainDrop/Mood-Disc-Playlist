@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="css/homepage.css"> 
+    </head>
+    <script>
+        // Here is the audio file, its important that this sound is loaded prior to the click event
+        // so that it plays without delay.
+        const audio = new Audio("../audio/click3.mp3");
+        audio.preload = "auto";
+
+        // Add event listeners to all links
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("a"); // Select all <a> tags
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default navigation
+                    audio.play(); // Play the sound
+                    setTimeout(() => {
+                        window.location.href = link.href; // Navigate after sound plays
+                    }, 300); // Adjust delay as needed
+                });
+            });
+        });
+    </script>
+    <body>
+        <div class="body1">        
+            <div class="mTitle">
+                <p>Mood Disc Playlist</p>    
+            </div>
+            <div class="qBox">
+                <p>I am feeling... [NOTE THIS IS JUST A MOCK-UP MADE BY KALANI, SUBJECT TO CHANGE.]</p>
+            </div>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/pziporatab/tabindex.html">Pzipora</a>
+            <br>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/nirvanatab/tabindex.html">Nirvana</a>
+            <br>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/kalanitab/tabindex.html">Kalani</a>
+            <br>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/emilytab/tabindex.html">Emily</a>
+            <br>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/siyantab/tabindex.html">SLi</a>
+            <br>
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/valarietab/tabindex.html">Valarie</a>
+            <br>        
+            <a href="https://viridraindrop.github.io/Mood-Disc-Playlist/creditstab/tabindex.html">Credits</a>
+            <br>
+            <button onclick="audio.play()">Test Sound</button>
+        </div>
+    </body>
+</html>
+
