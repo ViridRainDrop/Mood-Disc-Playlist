@@ -1,6 +1,15 @@
 
 /* disc image */
 
-#moon {
-    width: 500px;
+ body {
+    background-color: #f9bcf2;
+    font-family: Arial, sans-serif;  
+} 
+
+
+#disc {
+    width: 1px;
+    height: 1px;
+    size: 0ch;
+   
 }
