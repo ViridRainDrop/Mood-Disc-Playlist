@@ -1,0 +1,15 @@
+
+/* disc image */
+
+ body {
+    background-color: #53819d;
+    font-family: Arial, sans-serif;  
+} 
+
+
+#disc {
+    width: 1px;
+    height: 1px;
+    size: 0ch;
+   
+}
