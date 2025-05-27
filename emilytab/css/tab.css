@@ -1,15 +1,51 @@
 
 /* disc image */
 
- body {
-    background-color: #53819d;
+body {
+    background-color: #5b2736;
     font-family: Arial, sans-serif;  
 } 
 
+div {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 0px solid rgb(227, 220, 220);
+}
 
-#disc {
-    width: 1px;
-    height: 1px;
-    size: 0ch;
+h1 {
+    font-size: 2em;
+    color: #efe3e3;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5em;
+    color: #efe3e3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    border: #555 solid 2px;
+    padding: 10px;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 30%;
+    height: 70%;
+    
+
+
    
 }
