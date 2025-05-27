@@ -1,0 +1,40 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('PLACEHOLDER) no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Comic Sans MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .center-disc {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 8px solid #d77fa1;
+      animation: spin 12s linear infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff0f5;
+      box-shadow: 0 0 30px rgba(215, 127, 161, 0.4);
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .spotify-embed {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      border-radius: 12px;
+      border: none;
+      z-index: 2;
+    }
